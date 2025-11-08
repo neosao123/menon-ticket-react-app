@@ -29,7 +29,7 @@ const Dashboard = () => {
     setLoading(false);
   }, [tickets.length, dispatch]);
 
-  // Sync tickets to localStorage whenever tickets change
+
 useEffect(() => {
   localStorage.setItem("dashboard-tickets", JSON.stringify(tickets));
 }, [tickets]);

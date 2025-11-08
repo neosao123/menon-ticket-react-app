@@ -14,7 +14,7 @@ const loginSlice = createSlice({
             state.isLoggedIn = true;    
             state.user = action.payload;
             state.token = action.payload.token;
-              // ✅ Save to localStorage
+           
       localStorage.setItem("user", JSON.stringify(user));
       localStorage.setItem("token", token);
         }

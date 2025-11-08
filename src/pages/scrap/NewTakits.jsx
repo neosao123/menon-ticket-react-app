@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Select from "react-select";
 import { useDispatch, useSelector } from 'react-redux';
-import { addTicket, updateTicket, loadTickets } from '../redux/slices/ticketsSlice';
+import { addTicket, updateTicket, loadTickets } from '../../redux/slices/ticketsSlice';
 
 const NewTakits = () => {
   const [formData, setFormData] = useState({
